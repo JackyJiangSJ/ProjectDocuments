@@ -17,7 +17,7 @@ action|string|search|动作类型|定值
 status|int|0|状态码<br>0表成功,-1表失败|
 user|NSDictionary/Map|{key:value}|客户端解析为对象
 
-##user键值对
+## user键值对
 字段|数据类型|示例值|说明|备注
 :----:|:----:|:----:|:----:|:----:
 userName|string|小明|用户昵称|
@@ -44,39 +44,39 @@ followedCount|int|53|关注数|同上
 fansCount|int|101|粉丝数|同上
 
 ## 接口枚举值
-用户关系枚举
+### 用户关系枚举
 
-enum RelationType {
-    RelationTypeStranger       = 0,  //default，陌生人
-    RelationTypeFans           = 1,  //粉丝（她是我的粉丝）
-    RelationTypeFollowed       = 2,  //关注（我关注了她）
-    RelationTypeFriends        = 3,  //好友（两人互相关注，包含上面两种关系）
-    RelationTypeBlackList      = 4,  //黑名单（她在我的黑名单里）
-    RelationTypeSelf           = 100,//自己（预留）
+enum RelationType {<br>
+    RelationTypeStranger       = 0,  //default，陌生人<br>
+    RelationTypeFans           = 1,  //粉丝（她是我的粉丝）<br>
+    RelationTypeFollowed       = 2,  //关注（我关注了她）<br>
+    RelationTypeFriends        = 3,  //好友（两人互相关注，包含上面两种关系）<br>
+    RelationTypeBlackList      = 4,  //黑名单（她在我的黑名单里）<br>
+    RelationTypeSelf           = 100,//自己（预留）<br>
 };
 
-宝贝性别枚举
+### 宝贝性别枚举
 
-enum GenderType {
-    GenderTypeUnknown          = 0,  //default，未填写，理论请求成功时不会出现
-    GenderTypeFemale           = 1,  //女
-    GenderTypeMale             = 2,  //男
+enum GenderType {<br>
+    GenderTypeUnknown          = 0,  //default，未填写，理论请求成功时不会出现<br>
+    GenderTypeFemale           = 1,  //女<br>
+    GenderTypeMale             = 2,  //男<br>
 }
 
-宝贝星座枚举
+### 宝贝星座枚举
 
-enum ConstellationType {
-    ConstellationTypeUnknow      = 0, //未知，理论请求成功时不会出现
-    ConstellationTypeAries       = 1, //白羊座
-    ConstellationTypeTaurus      = 2, //金牛座
-    ConstellationTypeGemini      = 3, //双子座
-    ConstellationTypeCancer      = 4, //巨蟹座
-    ConstellationTypeLeo         = 5, //狮子座
-    ConstellationTypeVirgo       = 6, //处女座
-    ConstellationTypeLibra       = 7, //天秤座
-    ConstellationTypeScorpio     = 8, //天蝎座
-    ConstellationTypeSagittarius = 9, //射手座
-    ConstellationTypeCapricorn   = 10,//山羊座
-    ConstellationTypeAquarius    = 11,//水瓶座
-    ConstellationTypePisces      = 12,//双鱼座
+enum ConstellationType {<br>
+    ConstellationTypeUnknow      = 0, //未知，理论请求成功时不会出现<br>
+    ConstellationTypeAries       = 1, //白羊座<br>
+    ConstellationTypeTaurus      = 2, //金牛座<br>
+    ConstellationTypeGemini      = 3, //双子座<br>
+    ConstellationTypeCancer      = 4, //巨蟹座<br>
+    ConstellationTypeLeo         = 5, //狮子座<br>
+    ConstellationTypeVirgo       = 6, //处女座<br>
+    ConstellationTypeLibra       = 7, //天秤座<br>
+    ConstellationTypeScorpio     = 8, //天蝎座<br>
+    ConstellationTypeSagittarius = 9, //射手座<br>
+    ConstellationTypeCapricorn   = 10,//山羊座<br>
+    ConstellationTypeAquarius    = 11,//水瓶座<br>
+    ConstellationTypePisces      = 12,//双鱼座<br>
 }
